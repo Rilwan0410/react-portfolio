@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Resume() {
   return (
-<div className="resume" id="resume">
+<div className="resume " id="resume">
 
     <div className="card flex justify-start gap-[25px] font-montserrat mt-[150px] "> 
     {/* bg-[rgba(0,0,0,0.1)] rounded-md p-[30px] */}

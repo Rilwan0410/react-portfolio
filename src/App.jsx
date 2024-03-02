@@ -7,8 +7,8 @@ import Projects from "./components/Projects";
 function App() {
   return (
     <>
-      <section className="bg-[linear-gradient(90deg,#0f0c29,#302b63,#24243e)] h-screen w-full grid place-items-center fixed overflow-scroll  ">
-        <div className="text-center  rounded-xl items-center text-gray-100  ">
+      <section className="bg-[linear-gradient(90deg,#0f0c29,#302b63,#24243e)]  h-screen w-full grid place-items-center fixed overflow-scroll  ">
+        <div className="text-center  rounded-xl items-center text-gray-100   ">
           <Header />
 
           <div className="content flex w-full justify-between mt-[150px] h-screen px-[100px]">
