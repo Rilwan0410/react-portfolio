@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Header from "./components/Header";
-import cssLogo from './assets/svg/html-logo.svg'
+import Stacks from "./components/Stacks";
 
 function App() {
   return (
@@ -15,6 +15,8 @@ function App() {
                 <h1 className="text-[5rem] font-[500]">Rilwan Etti</h1>
                 <h4 className="text-[2rem] font-[300]">Full-Stack Developer</h4>
 
+                
+
                 <div className="icons mt-[15rem] flex gap-[25px]">
                   <a href="https://github.com/Rilwan0410" target="_blank">
                     {" "}
@@ -25,7 +27,7 @@ function App() {
               </div>
             </div>
 
-            <div className="right-side w-1/2 flex flex-col" id='about' >
+            <div className="right-side w-1/2 flex flex-col" id="about">
               <div className="right-content  text-left text-[1.1rem] text-[rgba(255,255,255,0.65)] font-poppins leading-[2rem]  font-[300]">
                 My name is Rilwan Etti and I started programming in 2022 because
                 I wanted to make a switch in careers. I didn't realize then that
@@ -35,19 +37,13 @@ function App() {
                 knowledge as I continue my pursuit to become the best programmer
                 I can be. As of today I have successfully completed a{" "}
                 <span class="text-white">full-stack bootcamp</span> for the{" "}
-                <span class="text-white">University Of Miami</span>
+                <span class="text-white">University Of Miami</span>.  Below is a full list of the stacks I have working proficiency in.
               </div>
 
 
-              <div className="stacks">
-                {/* <img src={cssLogo} alt="" /> */}
-              {/* <i class="fa-brands fa-html5"/>
-              <i class="fa-brands fa-css3-alt"/>
-              <i class="fa-brands fa-js"/>
-              <i class="fa-brands fa-node"/> */}
-              </div>
+              <Stacks/>
+              
             </div>
-
           </div>
         </div>
       </section>
