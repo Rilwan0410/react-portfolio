@@ -7,7 +7,7 @@ export default function Header() {
         <a href="#about">
             <li>About Me</li>
         </a>
-        <a href="">
+        <a href="#resume">
             <li>Resume</li>
         </a>
         <a href="">
