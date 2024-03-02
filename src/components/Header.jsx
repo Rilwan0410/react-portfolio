@@ -10,12 +10,13 @@ export default function Header() {
         <a href="#resume">
             <li>Resume</li>
         </a>
+        <a href="#projects">
+            <li>Projects</li>
+        </a>
         <a href="">
             <li>Contact</li>
         </a>
-        <a href="">
-            <li></li>
-        </a>
+ 
         <a href="">
             <li></li>
         </a>

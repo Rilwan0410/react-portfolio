@@ -39,8 +39,8 @@ function App() {
                 nothing brings me more satisfaction than bridging the gaps in my
                 knowledge as I continue my pursuit to become the best programmer
                 I can be. As of today I have successfully completed a{" "}
-                <span class="text-white">full-stack bootcamp</span> for the{" "}
-                <span class="text-white">University Of Miami</span>. Below is a
+                <span class="text-white font-[400]">full-stack bootcamp</span> for the{" "}
+                <span class="text-white font-[400]">University Of Miami</span>. Below is a
                 full list of the technologies I have working proficiency in.
               </div>
 

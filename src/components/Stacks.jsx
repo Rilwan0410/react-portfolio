@@ -15,7 +15,7 @@ import gitLogo from "../assets/svg/git-logo.svg";
 
 export default function Stacks() {
   return (
-    <div className="stacks mt-[90px] flex flex-wrap gap-[20px] ">
+    <div className="stacks mt-[70px] flex flex-wrap gap-[20px] ">
       <img
         className="w-[40px] h-[40px] mt-[15px] object-contain"
         src={htmlLogo}

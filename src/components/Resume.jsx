@@ -12,7 +12,7 @@ export default function Resume() {
                 <div className="experience-details flex items-start flex-col">
                   <h1 className="font-[600]" >University Of Miami Full-Stack Bootcamp</h1>
                   <h4 className="font-[400] text-gray-400 flex mt-[2px]">Student</h4>
-                  <p className="text-left font-[300] text-gray-200 mt-[10px]">24 week, full-stack course that focused on teaching the fundamentals of the Mern stack.</p>
+                  <p className="text-left font-[400] text-gray-200 mt-[10px]">24 week, full-stack course that focused on teaching the fundamentals of the Mern stack.</p>
 
                   <div className="technologies-used mt-[20px] flex flex-wrap gap-[10px] text-gray-800">
                     <div className="bg-[rgba(255,255,255,0.5)] font-[600] rounded-[1000px] p-[3px] text-[0.9rem] px-[10px]">HTML</div>
@@ -22,6 +22,7 @@ export default function Resume() {
                     <div className="bg-[rgba(255,255,255,0.5)] font-[600] rounded-[1000px] p-[3px] text-[0.9rem] px-[10px]">MySQL</div>
                     <div className="bg-[rgba(255,255,255,0.5)] font-[600] rounded-[1000px] p-[3px] text-[0.9rem] px-[10px]">MongoDB</div>
                     <div className="bg-[rgba(255,255,255,0.5)] font-[600] rounded-[1000px] p-[3px] text-[0.9rem] px-[10px]">Express</div>
+                    <div className="bg-[rgba(255,255,255,0.5)] font-[600] rounded-[1000px] p-[3px] text-[0.9rem] px-[10px]">Git</div>
                   </div>
                 </div>
                 </div>
