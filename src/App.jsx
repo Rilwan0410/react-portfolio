@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Header from "./components/Header";
+import cssLogo from './assets/svg/html-logo.svg'
 
 function App() {
   return (
@@ -24,7 +25,7 @@ function App() {
               </div>
             </div>
 
-            <div className="right-side w-1/2 flex flex-col scroll-pt-[100px]" id='about' >
+            <div className="right-side w-1/2 flex flex-col" id='about' >
               <div className="right-content  text-left text-[1.1rem] text-[rgba(255,255,255,0.65)] font-poppins leading-[2rem]  font-[300]">
                 My name is Rilwan Etti and I started programming in 2022 because
                 I wanted to make a switch in careers. I didn't realize then that
@@ -39,6 +40,7 @@ function App() {
 
 
               <div className="stacks">
+                {/* <img src={cssLogo} alt="" /> */}
               {/* <i class="fa-brands fa-html5"/>
               <i class="fa-brands fa-css3-alt"/>
               <i class="fa-brands fa-js"/>
