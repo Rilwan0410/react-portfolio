@@ -20,7 +20,7 @@ function App() {
           <div className="content flex w-full justify-between mt-[150px] h-screen px-[100px]">
             <div className="h-[4000px]">
               <div className="left-side top-[9.4rem] sticky flex flex-col items-start">
-                <h1 className="text-[5rem] font-[500]">Rilwan Etti</h1>
+                <h1 className="text-[4.8rem] font-[500]">Rilwan Etti</h1>
                 <h4 className="text-[2rem] font-[300]">Full-Stack Developer</h4>
 
                 <div className="icons mt-[15rem] flex gap-[25px]">
@@ -35,7 +35,7 @@ function App() {
 
             <div className="right-side w-1/2 flex flex-col h-[4000px]">
               <div
-                className="right-content  text-left text-[1.1rem] text-[rgba(255,255,255,0.65)] font-montserrat leading-[2rem]  font-[300]"
+                className="right-content  text-left  text-[1.1rem] text-[rgba(255,255,255,0.65)] font-montserrat leading-[2rem]  font-[300]"
                 id="about"
               >
                 My name is Rilwan Etti and I started programming in 2022 because
@@ -44,7 +44,7 @@ function App() {
                 genuinely enjoy building upon my skills as a programmer, and
                 nothing brings me more satisfaction than bridging the gaps in my
                 knowledge as I continue my pursuit to become the best programmer
-                I can be. As of today I have successfully completed a{" "}
+                I can be. As of today, I have successfully completed a{" "}
                 <span className="text-white font-[400]">
                   full-stack bootcamp
                 </span>{" "}

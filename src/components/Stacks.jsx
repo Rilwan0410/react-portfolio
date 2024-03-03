@@ -50,9 +50,10 @@ export default function Stacks() {
         alt=""
       />
       <img className="w-[70px] h-[70px] object-contain" src={nodeLogo} alt="" />
+     
       <img
         className="w-[70px] h-[70px] object-contain"
-        src={expressLogo}
+        src={mongoLogo}
         alt=""
       />
       <img
@@ -60,9 +61,9 @@ export default function Stacks() {
         src={mysqlLogo}
         alt=""
       />
-      <img
+       <img
         className="w-[70px] h-[70px] object-contain"
-        src={mongoLogo}
+        src={expressLogo}
         alt=""
       />
       <img
