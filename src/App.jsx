@@ -3,6 +3,11 @@ import Header from "./components/Header";
 import Stacks from "./components/Stacks";
 import Resume from "./components/Resume";
 import Projects from "./components/Projects";
+import techBlogImg from "./assets/project-imgs/tech-blog-img.png";
+import expressNoteTaker from "./assets/project-imgs/express-note-taker.png";
+import CLIEmployeeTracker from "./assets/project-imgs/cli-employee-tracker.png";
+import passwordGenerator from "./assets/project-imgs/password-generator.png";
+import HBOClone from "./assets/project-imgs/hboClone.jpeg";
 
 function App() {
   return (
@@ -39,14 +44,90 @@ function App() {
                 nothing brings me more satisfaction than bridging the gaps in my
                 knowledge as I continue my pursuit to become the best programmer
                 I can be. As of today I have successfully completed a{" "}
-                <span class="text-white font-[400]">full-stack bootcamp</span> for the{" "}
-                <span class="text-white font-[400]">University Of Miami</span>. Below is a
-                full list of the technologies I have working proficiency in.
+                <span class="text-white font-[400]">full-stack bootcamp</span>{" "}
+                for the{" "}
+                <span class="text-white font-[400]">University Of Miami</span>.
+                Below is a full list of the technologies I have working
+                proficiency in.
               </div>
 
               <Stacks />
               <Resume />
-              <Projects/>
+
+              <section
+                className="projects flex flex-col mt-[300px] gap-[50px] font-montserrat"
+                id="projects"
+              >
+                <Projects
+                  title="Tech Blog"
+                  imgURL={techBlogImg}
+                  description="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi
+                quam earum est facectus eveniet voluptas inventore face Lorem
+                ipsum dolor sit amet consectetur adipisicing elit. Repellat,
+                voluptas consequatur"
+                  stacksUsed={[
+                    "javascript",
+                    "MySQL",
+                    "Sequelize",
+                    "Handlebars",
+                    "Express",
+                    "NodeJS",
+                  ]}
+                  link="https://github.com/Rilwan0410/tech_blog_app"
+                />
+                <Projects
+                  title="HBO Clone"
+                  imgURL={HBOClone}
+                  description="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi
+                quam earum est facectus eveniet voluptas inventore face Lorem
+                ipsum dolor sit amet consectetur adipisicing elit. Repellat,
+                voluptas consequatur"
+                  stacksUsed={[
+                    "NextJS",
+                    'React',
+                    'TailwindCSS'
+                  ]}
+                  link="https://unique-kringle-44f6ab.netlify.app/create"
+                />
+                <Projects
+                  title="Note Taker"
+                  imgURL={expressNoteTaker}
+                  description="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi
+                quam earum est facectus eveniet voluptas inventore face Lorem
+                ipsum dolor sit amet consectetur adipisicing elit. Repellat,
+                voluptas consequatur"
+                  stacksUsed={[
+                    "HMTL",
+                    "CSS",
+                    "Javascript",
+                    " NodeJS",
+                    "Express",
+                  ]}
+                  link="https://github.com/Rilwan0410/express_note_app"
+                />
+
+                <Projects
+                  title="CLI Employee Tracker"
+                  imgURL={CLIEmployeeTracker}
+                  description="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi
+                quam earum est facectus eveniet voluptas inventore face Lorem
+                ipsum dolor sit amet consectetur adipisicing elit. Repellat,
+                voluptas consequatur"
+                  stacksUsed={["Javascript", "NodeJS", "MySQL"]}
+                  link="https://github.com/Rilwan0410/cli-employee-tracker"
+                />
+
+                <Projects
+                  title="Password Generator"
+                  imgURL={passwordGenerator}
+                  description="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi
+                quam earum est facectus eveniet voluptas inventore face Lorem
+                ipsum dolor sit amet consectetur adipisicing elit. Repellat,
+                voluptas consequatur"
+                  stacksUsed={["HTML", "CSS", "Javascript"]}
+                  link="https://github.com/Rilwan0410/passwordGenerator?tab=readme-ov-file"
+                />
+              </section>
             </div>
           </div>
         </div>

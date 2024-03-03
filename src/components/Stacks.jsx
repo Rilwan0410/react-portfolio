@@ -12,6 +12,9 @@ import tailwindLogo from "../assets/svg/tailwindcss.svg";
 import sassLogo from "../assets/svg/sass.svg";
 import handlebarsLogo from "../assets/svg/handlebarsjs.svg";
 import gitLogo from "../assets/svg/git-logo.svg";
+import nextJsLogo from "../assets/svg/next-js.svg";
+import reduxLogo from "../assets/svg/redux.svg";
+import githubLogo from "../assets/svg/github.svg";
 
 export default function Stacks() {
   return (
@@ -34,6 +37,16 @@ export default function Stacks() {
       <img
         className="w-[40px] h-[40px] mt-[15px] object-contain"
         src={reactLogo}
+        alt=""
+      />
+      <img
+        className="w-[40px] h-[40px] mt-[15px] object-contain"
+        src={nextJsLogo}
+        alt=""
+      />
+      <img
+        className="w-[40px] h-[40px] mt-[15px] object-contain"
+        src={reduxLogo}
         alt=""
       />
       <img className="w-[70px] h-[70px] object-contain" src={nodeLogo} alt="" />
@@ -75,6 +88,11 @@ export default function Stacks() {
       <img
         className="w-[40px] h-[40px] mt-[15px] object-contain"
         src={gitLogo}
+        alt=""
+      />
+      <img
+        className="w-[45px] h-[45px] mt-[10px] object-contain"
+        src={githubLogo}
         alt=""
       />
     </div>
