@@ -8,6 +8,9 @@ export default function Contact() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
 
+const [ validationMsg, setValidationMsg] = useState('')
+
+
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -18,13 +21,25 @@ export default function Contact() {
       .then(
         () => {
           console.log("SUCCESS!");
-          setName('')
-          setEmail('')
-          setMessage('')
+          if (!message || !name || !email){
+            setEmailSent(true)
+            setValidationMsg('Please fill out all inputs')
+            setTimeout(() => {
+                setEmailSent(false);
+                setValidationMsg('')
+              }, 4000);
+            return 
+          }
+       
+          setName("");
+          setEmail("");
+          setMessage("");
           setEmailSent(true);
+          setValidationMsg('Email Sent!')
           setTimeout(() => {
             setEmailSent(false);
-          }, 5000);
+            setValidationMsg('')
+          }, 4000);
         },
         (error) => {
           console.log("FAILED...", error.text);
@@ -67,7 +82,7 @@ export default function Contact() {
             type="email"
             value={email}
             onChange={(e) => {
-                setEmail(e.target.value)
+              setEmail(e.target.value);
             }}
             className="w-full  bg-transparent border-transparent outline-none text-gray-200  border-b-[#8a63b1] border-[2px] border-b-solid text-[1.2rem] p-[10px] font-[300]"
           />
@@ -85,16 +100,14 @@ export default function Contact() {
             cols="30"
             rows="6"
             value={message}
-            onChange={(e) => (
-                setMessage(e.target.value)
-            )}
+            onChange={(e) => setMessage(e.target.value)}
             className="w-full  outline-none bg-[rgba(255,255,255,0.1)] p-[20px] text-gray-200 text-[1.1rem] rounded-lg font-[300]"
           ></textarea>
         </div>
 
         {emailSent ? (
           <span className="transition ease-in-out duration-500">
-            Email Sent!
+        {validationMsg}
           </span>
         ) : (
           ""
