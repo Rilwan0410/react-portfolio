@@ -82,7 +82,7 @@ function App() {
                   imgURL={HBOClone}
                   description="Clone of the popular HBO site. This was one of the first projects i completed using NextJS, NextJS routers, and NextJS Links, and was a project that helped me better understand Next JS and React."
                   stacksUsed={["NextJS", "React", "TailwindCSS"]}
-                  link="https://unique-kringle-44f6ab.netlify.app/create"
+                  link="https://re-hboclone.netlify.app/create"
                 />
                 <Projects
                   title="Note Taker"
