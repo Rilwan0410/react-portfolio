@@ -20,7 +20,6 @@ export default function Projects({
             alt=""
             className="bg-white min-w-[150px] opacity-80  h-[90px] rounded-md"
           />
-          {/*  border-solid border-[3px] border-[rgba(0,0,0,0.6)] */}
         </div>
 
         <div className="">
