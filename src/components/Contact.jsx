@@ -8,8 +8,7 @@ export default function Contact() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
 
-const [ validationMsg, setValidationMsg] = useState('')
-
+  const [validationMsg, setValidationMsg] = useState("");
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -20,25 +19,21 @@ const [ validationMsg, setValidationMsg] = useState('')
       })
       .then(
         () => {
-          console.log("SUCCESS!");
-          if (!message || !name || !email){
-            setEmailSent(true)
-            setValidationMsg('Please fill out all inputs')
-            setTimeout(() => {
-                setEmailSent(false);
-                setValidationMsg('')
-              }, 4000);
-            return 
+          if (!message || !name || !email) {
+            setEmailSent(true);
+            setValidationMsg("Please fill out all inputs");
+            return;
           }
-       
+          console.log("SUCCESS!");
+
           setName("");
           setEmail("");
           setMessage("");
           setEmailSent(true);
-          setValidationMsg('Email Sent!')
+          setValidationMsg("Email Sent!");
           setTimeout(() => {
             setEmailSent(false);
-            setValidationMsg('')
+            setValidationMsg("");
           }, 4000);
         },
         (error) => {
@@ -67,6 +62,8 @@ const [ validationMsg, setValidationMsg] = useState('')
             name="from_name"
             value={name}
             onChange={(e) => {
+              setEmailSent(false);
+              setValidationMsg("");
               setName(e.target.value);
             }}
             className="w-full bg-transparent border-transparent outline-none  text-gray-200  border-b-[#8a63b1] border-[2px] border-b-solid text-[1.2rem] p-[10px] font-[300]"
@@ -82,6 +79,8 @@ const [ validationMsg, setValidationMsg] = useState('')
             type="email"
             value={email}
             onChange={(e) => {
+              setEmailSent(false);
+              setValidationMsg("");
               setEmail(e.target.value);
             }}
             className="w-full  bg-transparent border-transparent outline-none text-gray-200  border-b-[#8a63b1] border-[2px] border-b-solid text-[1.2rem] p-[10px] font-[300]"
@@ -100,18 +99,16 @@ const [ validationMsg, setValidationMsg] = useState('')
             cols="30"
             rows="6"
             value={message}
-            onChange={(e) => setMessage(e.target.value)}
+            onChange={(e) => {
+              setEmailSent(false);
+              setValidationMsg("");
+              setMessage(e.target.value);
+            }}
             className="w-full  outline-none bg-[rgba(255,255,255,0.1)] p-[20px] text-gray-200 text-[1.1rem] rounded-lg font-[300]"
           ></textarea>
         </div>
 
-        {emailSent ? (
-          <span className="transition ease-in-out duration-500">
-        {validationMsg}
-          </span>
-        ) : (
-          ""
-        )}
+        {emailSent ? <span className="my-[-20px]">{validationMsg}</span> : ""}
 
         <button className="bg-[#8a63b1] opacity-80 hover:opacity-100 transition duration-500 ease-in-out p-[10px] rounded-lg">
           Submit
