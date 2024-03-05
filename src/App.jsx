@@ -87,7 +87,30 @@ function App() {
               </div>
 
               <Stacks />
-              <Resume />
+
+              <div
+                className="resume mt-[230px] flex flex-col gap-[60px]"
+                id="resume"
+                data-container
+              >
+                <Resume
+                  job="University Of Miami Full-Stack Bootcamp"
+                  role="Student"
+                  description="24 week, full-stack course that focused on teaching the fundamentals of the Mern stack."
+                  stacksUsed={[
+                    "HTML",
+                    "CSS",
+                    "JavaScript",
+                    "React",
+                    "MySQL",
+                    "MongoDB",
+                    "Express",
+                    "Git",
+                  ]}
+                  startDate="SEPT 2023"
+                  endDate="MAR 2024"
+                />
+              </div>
 
               <section
                 data-container
