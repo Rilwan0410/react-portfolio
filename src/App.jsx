@@ -9,6 +9,7 @@ import expressNoteTaker from "./assets/project-imgs/express-note-taker.png";
 import CLIEmployeeTracker from "./assets/project-imgs/cli-employee-tracker.png";
 import passwordGenerator from "./assets/project-imgs/password-generator.png";
 import HBOClone from "./assets/project-imgs/hboClone.jpeg";
+import codingQuiz from "./assets/project-imgs/coding-quiz.png";
 
 function App() {
   const [activeNav, setActiveNav] = useState("about");
@@ -26,7 +27,7 @@ function App() {
           }
         });
       },
-      { threshold:0.25}
+      { threshold: 0.25 }
     );
 
     sections.forEach((section) => {
@@ -41,7 +42,7 @@ function App() {
           <Header activeNav={activeNav} />
 
           <div className="content flex w-full justify-between mt-[150px] h-screen px-[100px]">
-            <div className="h-[3960px]">
+            <div className="h-[4300px]">
               <div className="left-side top-[9.4rem] sticky flex flex-col items-start">
                 <h1 className="text-[4.8rem] font-[500]">Rilwan Etti</h1>
                 <h4 className="text-[2rem] font-[300]">Full-Stack Developer</h4>
@@ -145,6 +146,14 @@ function App() {
                   description="This is a password generator that will generate a unique password based on criteria specified. The criteria options include lowercase, uppercase, special characters and numeric characters. the password must be a minimum of 8 characters to a maximum of 128 characters. This project was built with HTML, CSS, and JavaScript."
                   stacksUsed={["HTML", "CSS", "Javascript"]}
                   link="https://github.com/Rilwan0410/passwordGenerator?tab=readme-ov-file"
+                />
+
+                <Projects
+                  title="Coding Quiz"
+                  imgURL={codingQuiz}
+                  description="This is a coding quiz game that will challenge your skills on basic programming quesions. You have 75 seconds to answer all of the questions, but the catch is that you will be deducted 10 seconds for each question you answer incorrectly. How ever many seconds are left once you finished the quiz will be your final score."
+                  stacksUsed={["HTML", "CSS", "Javascript"]}
+                  link="https://github.com/Rilwan0410/quizGame"
                 />
               </section>
 
