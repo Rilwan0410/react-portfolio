@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Header from "./components/Header";
 import Stacks from "./components/Stacks";
 import Resume from "./components/Resume";
-import Projects from "./components/Projects";
+import Project from "./components/Project";
 import Contact from "./components/Contact";
 import techBlogImg from "./assets/project-imgs/tech-blog-img.png";
 import expressNoteTaker from "./assets/project-imgs/express-note-taker.png";
@@ -117,7 +117,7 @@ function App() {
                 className="projects flex flex-col mt-[300px] gap-[50px] font-montserrat"
                 id="projects"
               >
-                <Projects
+                <Project
                   title="Tech Blog"
                   imgURL={techBlogImg}
                   description="This is an application that simulates a blog website with the ability for a user to create an account, create blog posts as well as the ability to edit or delete their existing blog post(s). The user can also comment on pre-existing blog posts from other accounts as well."
@@ -131,14 +131,14 @@ function App() {
                   ]}
                   link="https://github.com/Rilwan0410/tech_blog_app"
                 />
-                <Projects
+                <Project
                   title="HBO Clone"
                   imgURL={HBOClone}
                   description="Clone of the popular HBO site. This was one of the first projects i completed using NextJS, NextJS routers, and NextJS Links, and was a project that helped me better understand Next JS and React."
                   stacksUsed={["NextJS", "React", "TailwindCSS"]}
                   link="https://re-hboclone.netlify.app/create"
                 />
-                <Projects
+                <Project
                   title="Note Taker"
                   imgURL={expressNoteTaker}
                   description="This is a note taking app powered by express.js using json to store all the notes, and fs.writeFile() as the tool that will add or remove data to the json file to persist and/or delete notes"
@@ -153,7 +153,7 @@ function App() {
                   link="https://github.com/Rilwan0410/express_note_app"
                 />
 
-                <Projects
+                <Project
                   title="CLI Employee Tracker"
                   imgURL={CLIEmployeeTracker}
                   description="This is a Node JS application that allows you to create a database for employee information regarding the the name of the employee, their managers, the departments, salary and more. This app was created using inquirer to promot questions in the cli, as well as MySQL to query to a database to save and persist all of the data."
@@ -161,7 +161,7 @@ function App() {
                   link="https://github.com/Rilwan0410/cli-employee-tracker"
                 />
 
-                <Projects
+                <Project
                   title="Password Generator"
                   imgURL={passwordGenerator}
                   description="This is a password generator that will generate a unique password based on criteria specified. The criteria options include lowercase, uppercase, special characters and numeric characters. the password must be a minimum of 8 characters to a maximum of 128 characters. This project was built with HTML, CSS, and JavaScript."
@@ -169,7 +169,7 @@ function App() {
                   link="https://github.com/Rilwan0410/passwordGenerator?tab=readme-ov-file"
                 />
 
-                <Projects
+                <Project
                   title="Coding Quiz"
                   imgURL={codingQuiz}
                   description="This is a coding quiz game that will challenge your skills on basic programming quesions. You have 75 seconds to answer all of the questions, but the catch is that you will be deducted 10 seconds for each question you answer incorrectly. How ever many seconds are left once you finished the quiz will be your final score."

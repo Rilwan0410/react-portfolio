@@ -4,7 +4,7 @@ import expressNoteTaker from "../assets/project-imgs/express-note-taker.png";
 import CLIEmployeeTracker from "../assets/project-imgs/cli-employee-tracker.png";
 import passwordGenerator from "../assets/project-imgs/password-generator.png";
 
-export default function Projects({
+export default function Project({
   title,
   description,
   imgURL,
