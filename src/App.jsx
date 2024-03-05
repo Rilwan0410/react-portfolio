@@ -19,10 +19,8 @@ function App() {
 
     const observer = new IntersectionObserver(
       (entries) => {
-        // console.log(entries);
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            // console.log();
             setActiveNav(entry.target.id);
           }
         });
