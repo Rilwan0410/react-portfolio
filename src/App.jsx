@@ -50,7 +50,9 @@ function App() {
                     {" "}
                     <i className="fa-brands fa-github text-[2.1rem] text-gray-500 hover:text-white transition duration-500 cursor-pointer" />
                   </a>
+                  <a href="https://www.linkedin.com/in/rilwan-etti-0998202b7/" target="_blank">
                   <i className="fa-brands fa-linkedin text-[2.1rem] text-gray-500 hover:text-white transition duration-500 cursor-pointer" />
+                  </a>
                   <a
                     href="https://stackoverflow.com/users/23524684/rilwan-etti"
                     target="_blank"
