@@ -43,10 +43,10 @@ function App() {
           <div className="content flex w-full justify-between mt-[150px] h-screen px-[100px]">
             <div className="h-[3960px]">
               <div className="left-side top-[9.4rem] sticky flex flex-col items-start">
-                <h1 className="text-[4.8rem] font-[500]">Rilwan Etti</h1>
+                <h1 className="text-[4.8rem] mt-[50px] font-[500]">Rilwan Etti</h1>
                 <h4 className="text-[2rem] font-[300]">Full-Stack Developer</h4>
 
-                <div className="icons mt-[15rem] flex gap-[25px]">
+                <div className="icons mt-[18rem] flex gap-[25px]">
                   <a href="https://github.com/Rilwan0410" target="_blank">
                     {" "}
                     <i className="fa-brands fa-github text-[2.1rem] text-gray-500 hover:text-white transition duration-500 cursor-pointer" />
