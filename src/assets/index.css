@@ -18,3 +18,10 @@
 .font-poppins {
   font-family: poppins;
 }
+
+.active{
+  font-weight:600;
+  color:white;
+  transition: 0.3s ease-in-out;
+  transform:translateY(-3px)
+}

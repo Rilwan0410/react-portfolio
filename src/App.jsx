@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Header from "./components/Header";
 import Stacks from "./components/Stacks";
 import Resume from "./components/Resume";
@@ -11,11 +11,34 @@ import passwordGenerator from "./assets/project-imgs/password-generator.png";
 import HBOClone from "./assets/project-imgs/hboClone.jpeg";
 
 function App() {
+  const [activeNav, setActiveNav] = useState("about");
+
+  useEffect(() => {
+    const sections = document.querySelectorAll("[data-container]");
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        // console.log(entries);
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            // console.log();
+            setActiveNav(entry.target.id);
+          }
+        });
+      },
+      { threshold:0.25}
+    );
+
+    sections.forEach((section) => {
+      observer.observe(section);
+    });
+  }, []);
+
   return (
     <>
       <section className="bg-[linear-gradient(90deg,#0f0c29,#302b63,#24243e)]  h-screen w-full grid place-items-center fixed overflow-scroll  ">
         <div className="text-center  rounded-xl items-center text-gray-100   ">
-          <Header />
+          <Header activeNav={activeNav} />
 
           <div className="content flex w-full justify-between mt-[150px] h-screen px-[100px]">
             <div className="h-[3960px]">
@@ -29,7 +52,10 @@ function App() {
                     <i className="fa-brands fa-github text-[2.1rem] text-gray-500 hover:text-white transition duration-500 cursor-pointer" />
                   </a>
                   <i className="fa-brands fa-linkedin text-[2.1rem] text-gray-500 hover:text-white transition duration-500 cursor-pointer" />
-                  <a href="https://stackoverflow.com/users/23524684/rilwan-etti" target="_blank">
+                  <a
+                    href="https://stackoverflow.com/users/23524684/rilwan-etti"
+                    target="_blank"
+                  >
                     {" "}
                     <i className="fa-brands fa-stack-overflow text-[2.1rem] text-gray-500 hover:text-white transition duration-500 cursor-pointer" />
                   </a>
@@ -39,6 +65,7 @@ function App() {
 
             <div className="right-side w-1/2 flex flex-col ">
               <div
+                data-container
                 className="right-content  text-left  text-[1.1rem] text-[rgba(255,255,255,0.65)] font-montserrat leading-[2rem]  font-[300]"
                 id="about"
               >
@@ -64,6 +91,7 @@ function App() {
               <Resume />
 
               <section
+                data-container
                 className="projects flex flex-col mt-[300px] gap-[50px] font-montserrat"
                 id="projects"
               >
